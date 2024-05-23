@@ -1,0 +1,18 @@
+
+.container {
+    position: relative;
+}
+.trecce{
+    margin-left: 10px;
+
+}
+.babbà{
+    margin-left: 420px;
+}
+#immagine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}

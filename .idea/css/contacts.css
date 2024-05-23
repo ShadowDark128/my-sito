@@ -1,0 +1,93 @@
+.body{
+    cursor: url('/img/LogoBIN.png'), auto;
+    background-color: brown;
+    
+}
+
+
+.gallery{
+    font-size: 10%;
+    
+}
+
+.item{
+    display: inline-block;
+    vertical-align: top;
+    margin: 3px;
+    cursor:pointer;
+    
+    align-content: center;
+   
+
+}
+.details{
+    overflow: hidden;
+    max-height: 1px;
+    transition: max-height 0.5s ease;
+    display: none;
+    padding: 20px;
+    border: 1px solid;
+    width: 50%;
+    border-radius: 3px;
+    /*float: right;
+    text-align: center;*/
+}
+.item:hover .details{
+    max-height: 200px;
+   
+}
+.item2{
+    display: flex;
+    
+}
+nav{
+    background-color: rgb(125, 62, 17);
+    width: 100%;
+    height: 5%;
+    border: 3px;
+    border-radius: 5px ;
+    list-style: none;
+}
+ul{
+    padding: 5px;
+    list-style: none;
+}
+button{
+    background-color: rgb(171, 86, 26);
+    border-color: rgb(117, 78, 0);
+    border-radius: 20px;
+    width: 248px;
+    top: -4px;
+    margin-top: 6px;
+    border: none;
+
+    color: rgb(255, 145, 0);
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    font-size: 18px;
+    margin-left: 1px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3 ease;
+}
+a{
+    color: rgb(255, 207, 145);
+    text-decoration: none;
+    display: grid;
+    text-align: center;
+}
+.home{
+    font-size: 12px;
+    position: relative;
+}
+.prodotti{
+    font-size: 12px;
+    position: relative;
+}
+.chi.siamo{
+    font-size: 12px;
+    position: relative;
+        
+}

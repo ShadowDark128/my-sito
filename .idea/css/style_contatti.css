@@ -1,0 +1,277 @@
+
+body{
+    background-color: chocolate;
+    
+    display: flex;
+}
+
+header{
+    background-color: rgb(140, 79, 0);
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 4px solid;
+    border-bottom-left-radius: 4px ease-out;
+}
+.loghi_socials{
+    background-color: rgb(107, 52, 13);
+    color: rgb(255, 212, 155);
+    display: grid;
+    width: 100%;
+    padding: 10px 5px;
+}
+.tripadvisor{
+    background-color: rgb(160, 79, 21);
+    width: 550px;
+    border: 3px solid;
+    border-radius: 6px;
+    color: coral;
+    display: inline;
+}
+.tripadvisor img{
+    width: 195px;
+}
+.facebook{
+    background-color: rgb(160, 79, 21);
+    width: 550px;
+    border: 3px solid;
+    border-radius: 6px;
+    color: coral;
+    display: inline-block;
+}
+.facebook img{
+    width: 52px;
+}
+.whatsapp{
+    background-color: rgb(160, 79, 21);
+    width: 550px;
+    border: 3px solid;
+    border-radius: 6px;
+    color: coral;
+    display: inline-block;
+}
+.whatsapp img{
+    width:95px;
+    background-color: #33d951;
+}
+.instagram{
+    background-color: rgb(160, 79, 21);
+    width: 550px;
+    border: 3px solid;
+    border-radius: 6px;
+    color: coral;
+  
+}
+.instagram img{
+    width: 42px;
+   
+}
+/* Definizione delle transizioni */
+.social-buttons button {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    padding: 6px;
+}
+
+/* Animazione al passaggio del mouse */
+.social-buttons button:hover {
+    transform: scale(1.1);
+    background-color: #53ebff; /* Cambia il colore di sfondo */
+    color: #333; /* Cambia il colore del testo */
+}
+
+/* Aggiunta di uno stile per distinguere i link */
+.social-buttons button a {
+    text-decoration: none;
+    color: inherit; /* Eredità del colore del testo */
+}
+
+/* Aggiunta di uno stile all'immagine all'interno del pulsante */
+.social-buttons button img {
+    width: 40px; /* Imposta la larghezza desiderata per le icone */
+    height: 40px; /* Imposta l'altezza desiderata per le icone */
+    border-radius: 50%; /* Assicurati che le icone siano circolari */
+    display: block; /* Assicurati che l'immagine sia visualizzata come un blocco */
+    margin:  auto; /* Centra l'immagine all'interno del pulsante */
+}
+
+
+.social-button img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  display: block;
+  transition: transform 0.3s ease; /* Aggiungi una transizione per l'effetto di zoom */
+}
+
+
+
+
+
+
+
+.social-buttons {
+    display: flex;
+    border: 2px chocolate;
+    border-radius: 3px;
+    padding: 4px 2px;
+    color: #007bff; /* Cambia il colore del testo al passaggio del mouse */
+   /* transition: transform 0.3s ease, color 0.3s ease; /* Rimuove l'animazione del colore di sfondo */
+   /* border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;*/
+  
+    
+   
+}  
+.social-buttons a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 209, 192);
+    
+}
+
+
+.bt_tripadvisor{
+    background-color: chocolate;
+    width: 25%;
+    height: 65px;
+    display: inline-block;
+    font-size: 14px;
+  transition: color 0.3s ease; /* Aggiungi una transizione per il cambio di colore del testo */
+}
+
+.bt_tripadvisor img{
+    width: 20px;
+    height: 10px;
+    
+    
+}
+.bt_facebook{
+    background-color:#0266ff;
+    width: 25%;
+    height: 65px;
+    display: inline-block
+}
+.bt_facebook img{
+    width: 20px;
+    height: 20px;
+}
+.bt_whatsapp{
+    background-color: #33d951;
+    width: 25%;
+    height: 65px;
+    display: inline-block
+}
+.bt_whatsapp img{
+    width: 20px;
+    height: 20px;
+}
+.sms input{
+    margin-top: 10px;
+    background-color: #33d951;
+    border: 3px solid;
+    border-radius: 6px;
+}
+input {
+    background-color: #33d951;
+    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.bt_instagram {
+    background-color: #C13584;
+    
+    width: 25%;
+    height: 65px;
+    display: inline-block;
+    animation: changeColor 5s infinite;
+    color: #000000;
+    animation: changeColor 6s  infinite;
+}
+
+/* Animazione per cambiare il colore di sfondo */
+@keyframes changeColor {
+    0% {
+        background-color: #C13584; /* Colore di sfondo iniziale */
+    }
+    25% {
+        background-color: #8a3ab9; /* Primo colore intermedio */
+    }
+    50% {
+        background-color: #3f729b; /* Secondo colore intermedio */
+    }
+    75% {
+        background-color: #ffe11b; /* Terzo colore intermedio */
+    }
+    100% {
+        background-color: #C13584; /* Ritorna al colore di sfondo iniziale */
+    }
+    
+}
+.bt_instagram:not(:hover) {
+    animation-play-state: infinite; /* Ferma l'animazione quando il mouse non è sopra il pulsante */
+}
+
+    
+    
+.bt_instagram img{
+    width: 20px;
+    height: 20px;
+}
+.mappa{
+    background-color: rgb(124, 57, 10);
+    margin-top: 25px;
+    margin: 6px;
+    border: 3px solid;
+    color: rgb(51, 26, 9);
+    padding: 2px;
+    
+}
+
+
+
+
+
+
+.fine-pagina{
+    width: 122%;
+    height: 30px;
+    background-color: rgb(203, 130, 66);
+    margin-left: -308px;
+    margin-right: -11px;
+    font-size: small;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    float:inline-end;
+    margin-top: 560px;
+    padding: 1px;
+    overflow: hidden;
+    position:relative;
+    border: 2px solid;
+    border-bottom: 10px;
+    border-radius: 3px;
+
+
+
+}
+@keyframes scrollText {
+    0% {
+        transform:
+        translateX(600%);
+    }
+    100% {
+        transform: 
+        translateX(-100%);
+
+    }
+}
+.©copyright{
+    margin-top: 0px;
+    white-space: nowrap;
+    /*overflow: hidden;*/
+    display: inline-block;
+    animation: scrollText 10s linear infinite;
+    position: relative;
+
+}

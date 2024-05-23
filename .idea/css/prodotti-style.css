@@ -1,0 +1,367 @@
+body{
+    cursor: url('/img/LogoBIN.png'), auto;
+    background-color: rgb(131, 62, 14);
+    width: 86%;
+    
+    
+}
+
+nav ul{
+    background-color: chocolate;
+    width: 765px;
+    height: 60%;
+    text-decoration: none;
+    list-style:none;
+    font-family: 'Times New Roman', Times, serif;
+   
+    padding: 3px;
+    margin-bottom: 3px;
+    margin-left: 25%;
+    display:flex;
+    grid-template-columns: auto;
+    text-align: center;
+    border: 3px rgb(163, 82, 24);
+    border-radius: 10px;
+}
+button {
+    background-color: rgb(171, 86, 26);
+    border-color: rgb(117, 78, 0);
+    border-radius: 20px;
+    width: 248px;
+    top: -4px;
+    margin-top: 6px;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+
+    color: rgb(255, 145, 0);
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    font-size: 18px;
+    margin-left: 1px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3 ease;
+}
+.bt-home{
+    margin-left: 3px;
+    grid-template-columns: auto;
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+}
+.bt-chi-siamo{
+   
+    margin-left: 2px;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: auto;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.bt-contatti{
+    margin-left: 2px;
+    margin-right: 3px;
+    text-align: center;
+    display: grid;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a{
+    color: rgb(255, 207, 145);
+    text-decoration: none;
+    display: grid;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+button a{
+    color: rgb(255, 164, 27);
+    border-color:rgb(117, 78, 0) ;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3 ease;
+    display: grid;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: chocolate;
+    display: grid;
+    width: 100%;
+    margin-left: 100px;
+    height: 100%;
+    text-align: center;
+    
+}
+
+.sfondo{
+    background-color: chocolate;
+    width: 1160px;
+    height: 100%;
+    color: rgb(113, 56, 16);
+    display: grid;
+
+}
+.benvenuti{
+    background-color: rgb(85, 44, 14);
+    width: 95%;
+    height: 50%;
+    color:rgb(243, 154, 90) ;
+    padding: 1.2%;
+    border: 2px solid;
+    border-radius: 3px;
+    margin-left: 20px;
+    display: grid;
+    text-align: center;
+}
+
+.logo-bin img {
+    width: 80px;
+    height: auto;
+    float: left;
+    margin-top: -175px;
+    margin-left: 14% ;
+    display: grid;
+    
+
+}
+.logo-bin1 img {
+    width: 80px;
+    height: auto;
+    float: left;
+    margin-top: -175px;
+    margin-left: 70%;
+    display: grid;
+    
+
+   
+
+}
+
+
+.vi-presentiamo{
+    background-color: rgb(77, 39, 12);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-left: 45px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgb(243, 154, 90);
+    padding: 10px 2px;
+    width: 89%;
+    border: 2px solid;
+    border-radius: 6px;
+    display: grid;
+}
+.sfondo-2{
+    background-color: rgb(100, 50, 15);
+    size: 10%;
+    font-size: 30%;
+    border: 2px solid;
+    border-radius: 10px;
+    width: 43%;
+    height: 10%;
+    color: rgb(255, 151, 77);
+
+}
+
+/*.nav2 .ul2{
+    background-color: rgb(77, 39, 12);
+    width: 1100px;
+    margin-left: 20px;
+    margin-top:  -10px;
+    display: flex;
+    text-align: center;
+    
+}*/
+.container{
+    background-color: saddlebrown;
+    border-style: groove;
+    border: 4px solid;
+    border-radius: 6px rgb(126, 71, 3);
+    padding: 3px;
+}
+
+.bt_torte{
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+}
+.bt_biscotti{
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+}
+.bt_dolci{
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+}
+.bt_pdz{
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+}
+.image {
+     max-width: 300px;
+        margin: 20px auto;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+
+}
+img{
+    margin-top: 20px;
+}
+.show{
+    opacity: 1;
+}
+
+.image_torte{
+    width: 30%;
+    
+}
+.image_dolci{
+    width: 30%;
+}
+.image_biscotti{
+    width: 30%;
+}
+.image_pdz{
+    width: 30%;
+}
+.img_torte{
+    margin-top: -3px;
+}
+
+.torte{
+    
+  
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #592f00;
+    color: rgb(212, 155, 8);
+    border: none;
+
+}
+.torte:hover{
+    background-color: rgb(165, 54, 13);
+}
+
+.img_dolci{
+    margin-top: -2400px;
+}
+.dolci{
+   
+    
+    padding: 20px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    
+    border: 5px solid;
+    border-radius: 5px;
+    background-color: #592f00;
+    color: rgb(212, 155, 8);
+    
+}
+.dolci:hover{
+    background-color: rgb(165, 54, 13);
+}
+.img_biscotti{
+    margin-top: -850px;
+}
+.biscotti{
+  
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #592f00;
+    color: rgb(212, 155, 8);
+    border: 5px solid;
+}
+.biscotti:hover{
+    background-color: rgb(165, 54, 13);
+}
+.img_pdz{
+    margin-top: -1080px;
+}
+.pdz{
+   
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #592f00;
+    color: rgb(212, 155, 8);
+    border: 5px solid;
+}
+
+.pdz:hover{
+    background-color: rgb(165, 54, 13);
+}
+
+.torta-multi-piano{
+    width: 200px;
+    height: 300px;
+    border: 2px solid;
+    border-radius: 6px;
+    margin-top: 0px;
+}
+.zeppole{
+    width: 400px;
+    height: 500èx;
+    border: 3px solid;
+    border-radius: 6px;
+    margin-top:0px;
+}
+.segnaposto-laurea{
+    width: 420px;
+    height: 300px;
+    margin-top: 0px;
+    border: 3px solid;
+    border-radius: 6px;
+}
+
+
+
+
+
+
+.fine-pagina{
+    width: 220%;
+    height: 30px;
+    background-color: rgb(203, 130, 66);
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: small;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 320px;
+    padding: 1px;
+    overflow: hidden;
+    position: relative;
+
+
+
+}
+@keyframes scrollText {
+    0% {
+        transform:
+        translateX(112%);
+    }
+    100% {
+        transform: 
+        translateX(-130%);
+
+    }
+}
+.©copyright{
+    margin-top: 0px;
+    white-space: nowrap;
+    /*overflow: hidden;*/
+    display: inline-block;
+    animation: scrollText 6s linear infinite;
+    position: relative;
+
+}
