@@ -1,0 +1,149 @@
+<!DOCTYPE HTML  html5> 
+<html lang="en">
+    <head>
+      
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img\logo nobili.png" type="image\png">
+        <link rel="stylesheet" href="/css/style_contatti.css">
+        <Title>I Nostri Contatti</Title>
+
+    </head>
+    <body>
+        <script>
+            if ('serviceWorker' in navigator) {
+              window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/js/sw.js').then(function(registration) {
+                  console.log('Service Worker registrato con successo:', registration);
+                }, function(error) {
+                  console.log('Errore durante la registrazione del Service Worker:', error);
+                });
+              });
+            }
+            </script>
+        <header>
+            <div class="sfondo1">
+                <h1>Benvenuti nella nostra pagina web!</h1>
+                <h2>Contatti</h2>
+            </div>
+            <!--<div class="loghi_socials">
+                <div class="tripadvisor">
+                    <h2>Cliccami e aggiungi una recensione Grazie</h2>
+                    <img src="/img/social/TripAdvisormod.png" alt="tripadvisor">
+                </div>
+                <div class="facebook">
+                    <img src="/img/social/Facebook.png" alt="Facebook">
+                </div>
+                <div class="whatsapp">
+                    <img src="/img/social/wp.png" alt="WhatsApp">
+                </div>
+                <div class="instagram">
+                    <img src="/img/social/instagram.png" alt="instagram">
+                </div>
+            </div>-->
+
+            <div class="social-buttons">
+                <button type="button" class="bt_tripadvisor">
+                    
+                    <img type="shortcut"  src="/img/social/LogoTripAdvisor.png" alt="Logo Tripadvisor">
+                    <a href="https://www.tripadvisor.it/Restaurant_Review-g1575053-d8145791-Reviews-Biscotteria_I_Nobili-Calitri_Province_of_Avellino_Campania.html">TripAdvisor</a>
+                </button>
+                <button class="bt_facebook" type="button">
+                    
+                    <img type="icon" src="/img/social/2023_Facebook_icon.png" alt="Logo Facebook">
+                    <a href="https://www.facebook.com/biscotteriainobili1/?locale=it_IT">Facebook</a>
+                </button>
+                <button id="bt_whatsapp" class="bt_whatsapp" type="button" oneclick="apriWhatApp()">
+                    
+                    <img type="icon" src="/img/social/wp.jpg" alt="Logo WhatsApp">
+                    <a >WhatsApp</a>
+                    <input class="sms" id="messageInput" placeholder="Inserisci il messaggio">
+
+                </button>
+                <script src="/js/wp.js"></script>
+                <button class="bt_instagram">
+                    
+                    <img type="shortcut"  src="/img/social/instagram.png"   alt="Logo Instagram">
+                    <a href="">Instagram</a>
+                </button>
+                
+                <div class="mappa">
+                    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+                        
+                    </script>
+                    
+                <div class="mappa" id="mappa">
+                    
+                    <iframe title="mappa negozio" class="mio iframe" id="mio iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.6783627884683!2d15.433878275951184!3d40.900869771365706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1339a0441c9db29f%3A0xc026eaca45bfcdb7!2sBiscotteria%20I%20Nobili%20Snc!5e0!3m2!1sit!2sit!4v1706703552563!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+                </div>
+
+            </div>
+            <div class="fine-pagina">
+                <h3 class="©copyright">Biscotteria I Nobili SNC © Copyright 2024 Sito Ufficiale della Biscotteria I Nobili SNC Tutti i diritti sono riservati!</h3>
+               
+            
+            
+            </div>
+
+        </header>
+        <script>
+            // Richiedi il permesso per inviare notifiche push
+            function requestNotificationPermission() {
+                if (!("Notification" in window)) {
+                    alert("I browser che non supportano le notifiche push non possono ricevere notifiche.");
+                } else if (Notification.permission === "granted") {
+                    // Permesso già garantito
+                } else if (Notification.permission !== "denied") {
+                    Notification.requestPermission().then(function (permission) {
+                        if (permission === "granted") {
+                            // Permesso ottenuto
+                        }
+                    });
+                }
+            }
+        
+            // Invia una notifica push al cliente
+            function sendPushNotification(message) {
+                if (Notification.permission === "granted") {
+                    var notification = new Notification("Nuovo messaggio", {
+                        body: message,
+                        icon: "icon.png" // Aggiungi l'URL dell'icona desiderata
+                    });
+        
+                    notification.onclick = function() {
+                        // Azione da eseguire quando il cliente clicca sulla notifica
+                        // Puoi aprire una finestra di dialogo, o reindirizzare l'utente alla pagina del tuo sito web
+                        alert("Hai ricevuto un nuovo messaggio!");
+                    };
+                }
+            }
+        
+            // Invia il messaggio su WhatsApp e notifica il cliente
+            function sendMessageAndNotify(message) {
+                sendPushNotification("Hai ricevuto un nuovo messaggio su WhatsApp!"); // Notifica il cliente
+                sendMessageToWhatsApp(message); // Invia il messaggio su WhatsApp
+            }
+        
+            // Codice per inviare il messaggio su WhatsApp (incluso dalla tua implementazione)
+            function sendMessageToWhatsApp(message) {
+                var phoneNumber = "393395334948"; // Sostituisci con il tuo numero di telefono
+                var encodedMessage = encodeURIComponent(message);
+                var whatsappURL = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
+                window.open(whatsappURL, "_blank");
+            }
+        </script>
+        
+        <!-- Chiamata alla funzione per richiedere il permesso al caricamento della pagina -->
+        <script>
+            requestNotificationPermission();
+        </script>
+        
+
+        
+    </body>
+    
+
+</html>

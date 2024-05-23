@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chi siamo...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+   
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="shortcut icon" href="img\logo nobili.png" type="image\png">
+    <link rel="stylesheet" href="css/chi siamo style.css">
+    
+    
+   
+    
+
+
+
+
+
+    </head>
+    <div class="navigatore">
+        <nav class="menu">
+            
+                <button class="Home" id="bt-home"> <a href="/index.html">Home</a></button>
+                <button class="Prodotti" id="bt-prodotti"><a href="/Prodotti.html">Prodotti</a></button>
+                <button class="Contatti" id="bt-contatti"><a href="/Contatti.html"> Contatti</a></button>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Cerca....">
+                </div>
+            
+        </nav>
+    </div>
+
+        <body class="chi siamo">
+            <header >
+                
+
+                <div class="sfumatura-paragrafo">
+                    <div class="paragrafo">
+                        <h1 class="benvenuti">
+                            Benvenuti nella sezione della Biscotteria I Nobili, Noi Chi Siamo
+                        </h1>
+                        <p class="p">Noi siamo una biscotteria di Calitri in provincia di avellino</p>
+                        <p class="p1"> facciamo biscotti e dolci comprese torte e rustici di ottima qualità</p>
+                        <p class="p2">siamo bravi a gestire sia i dolci che i gusti dei clienti </p>
+                        <p class="p3"> saremo a vostra disposizione per qualsiasi evenienza o informazione</p>
+                        <p class="p4">se volete ordinare torte o altro chiamateci </p>
+        <div class="container">    
+                <img class="img-trecce" id="immagine" src="/img/biscotteria-i-nobili trecce.jpg" alt="Scaffale con le trecce">
+                
+                
+        </div>
+        <script>
+            // Array di immagini
+var immagini = [
+    '/img/biscotteria-i-nobili babbà.jpg',
+    '/img/biscotteria-i-nobili trecce.jpg',
+    '/img/biscotteria-i-nobili zeppole.jpg',
+    'img/trecce in work.jpeg'
+];
+
+// Indice dell'immagine attualmente visualizzata
+var immagineIndex = 0;
+
+// Ottieni l'elemento dell'immagine
+var immagine = document.getElementById('immagine');
+
+// Imposta la transizione di opacità per l'elemento immagine
+immagine.style.transition = 'opacity 1s';
+
+// Funzione per cambiare l'immagine
+function cambiaImmagine() {
+    // Riduci l'opacità dell'immagine a 0 in un secondo
+    immagine.style.opacity = 0;
+
+    // Dopo un secondo, cambia l'immagine e reimposta l'opacità a 1
+    setTimeout(function() {
+        immagineIndex = (immagineIndex + 1) % immagini.length; // Passa alla prossima immagine nell'array
+        immagine.src = immagini[immagineIndex];
+        immagine.style.opacity = 1;
+    }, 1000); // Tempo in millisecondi, 1000 millisecondi = 1 secondo
+}
+
+// Cambia immagine ogni 3 secondi (3000 millisecondi)
+setInterval(cambiaImmagine, 3000);
+        </script>
+                   
+                
+                        <img class="logo-BIN" src="/img/logo nobili.png" alt="LOGO B.I.N." >
+                    </div>
+                </div>
+                
+            </header>
+            
+
+            
+            
+           <div class="Informazione">
+                <div class="info-contatti">
+                    <h1 class="h2">Contatti</h1>
+                    <p class="L.S.">Luciana Senerchia - 3395334948</p>
+                    <p class="G.S.">Gabriel Stanco    - 3392909192</p>
+                </div>
+                <div class="posizione">
+                    <h1>Vieni a trovarci!</h1>
+                            
+                    
+                </div>
+                <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+                <div class="mappa" id="mappa">
+                    
+                    <iframe class="mio iframe" id="mio iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.6783627884683!2d15.433878275951184!3d40.900869771365706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1339a0441c9db29f%3A0xc026eaca45bfcdb7!2sBiscotteria%20I%20Nobili%20Snc!5e0!3m2!1sit!2sit!4v1706703552563!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+                <div class="info_order">
+                    <h2>Spedizione</h2>
+                    <h4>da: Calitri (Avellino) </h4>
+                    <h4>Via: Corso Matteotti 13</h4>
+                    <h4 class="a_voi">|a: A VOI| </h4>
+        
+                </div>
+                <div class="News">
+                    <p>Qui troverete le nostre news di biscotti</p>
+                    <div class="content_News">
+
+                    </div>
+                </div>
+
+
+
+           </div>
+          
+
+
+            
+            
+           
+            
+        </body>
+</html>
